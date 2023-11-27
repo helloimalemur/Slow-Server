@@ -8,16 +8,14 @@ This can come handy while testing how your  application responds to a slow exter
 
 Right now **Slow-Server** supports only `GET` requests with configurable delay and URL parameters.
 
-Using **Slow-Server** is really easy.
+### Making Requests
 
-### Request Structures
-
-##### Delay Mode
+##### Delayed
 ```bash
 curl -XGET http://localhost:3000/delay/{delay_time}
 ```
 
-### Dev Setup
+### Setup
 
 ##### Running the app
 ```bash
