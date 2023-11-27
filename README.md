@@ -1,12 +1,6 @@
 # Slow-Server
 A test service to mock slow server responses
 
-```shell
-curl -XGET http://localhost:3000/delay/3
-```
-
-
-
 ### Description
 
 **Slow-Server** lets you simulate a slow server response, when you make a request.
@@ -20,7 +14,7 @@ Using **Slow-Server** is really easy.
 
 ##### Delay Mode
 ```bash
-https://Slow-Server-the-slow-api.herokuapp.com/delay/{delay_time}
+curl -XGET http://localhost:3000/delay/{delay_time}
 ```
 
 ### Dev Setup
