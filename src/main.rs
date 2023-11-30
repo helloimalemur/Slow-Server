@@ -19,6 +19,7 @@ async fn delay(req: Request<hyper::body::Incoming>) -> Result<Response<BoxBody<B
     let delay_time = path.get(2).unwrap().parse::<u64>().expect("unable to parse int from delay_time");
 
     // apply sleep delay and make request
+    println!("{}", uri_n1);
     let _ = tokio::time::sleep(Duration::new(delay_time, 0)).await;
     let success = format!("successfully delayed request by {} seconds", delay_time);
 
