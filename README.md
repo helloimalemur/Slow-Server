@@ -17,12 +17,15 @@ curl -XGET http://localhost:3000/delay/{delay_time}
 
 ### Setup
 
+##### Install Rust
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 ##### Running the app
 ```bash
-$ git clone https://github.com/helloimalemur/Slow-Server.git
-$ cd Slow-Server/
-$ cargo build --release
-$ target/release/slow_server
+git clone https://github.com/helloimalemur/Slow-Server.git;
+cd Slow-Server/;
+cargo build --release;
+target/release/slow_server;
 ```
 
 ### Contributions
